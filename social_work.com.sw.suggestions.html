@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of Social Work</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #1abc9c;
+        }
+
+        .login-dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .login-dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 200px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            z-index: 1;
+            right: 0;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .login-dropdown-content input[type="text"],
+        .login-dropdown-content input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .login-dropdown-content button {
+            width: 100%;
+            padding: 10px;
+            background-color: #2c3e50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-dropdown-content button:hover {
+            background-color: #1abc9c;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+            margin-top: 40px;
+        }
+
+        .search-bar {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            max-width: 80%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .search-bar button {
+            padding: 10px 20px;
+            background-color: #2c3e50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .search-bar button:hover {
+            background-color: #1abc9c;
+        }
+
+        .notice-board {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-left: 5px solid #2c3e50;
+            overflow: hidden;
+        }
+
+        .notice-board marquee {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .teacher-info,
+        .student-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .teacher-info .card,
+        .student-info .card {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: calc(33.33% - 20px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .teacher-info .card:hover,
+        .student-info .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .teacher-info .card,
+            .student-info .card {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .teacher-info .card,
+            .student-info .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Department of Social Work</h1>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="https://nstu.edu.bd/">NSTU</a>
+        <a href="#programs">Programs</a>
+        <a href="#faculty">Faculty</a>
+        <a href="#events">Events</a>
+        <a href="#notice-board">Notice Board</a>
+        <a href="#teacher-info">Teacher Info</a>
+        <a href="#student-info">Student Info</a>  
+        <a href="file:///C:/Users/tushar/Documents/Suggestions/log%20in.html">Log in</a> 
+        <a href="file:///C:/Users/tushar/Documents/Suggestions/signup.html">Sign Up</a>     
+    </div>
+    </nav>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button>Search</button>
+    </div>
+
+    <!-- Main Content Container -->
+    <div class="container">
+
+        <!-- About Us Section -->
+        <section id="about" class="section">
+            <h2>About Us</h2>
+            <p>Welcome to the Department of Social Work. We are dedicated to advancing social justice and improving the well-being of individuals, families, and communities through education, research, and service.</p>
+        </section>
+
+        <!-- Programs Section -->
+        <section id="programs" class="section">
+            <h2>Programs</h2>
+            <p>We offer a variety of programs designed to prepare students for careers in social work. Our programs include:</p>
+            <ul>
+                <li>Bachelor of Social Science (BSS)</li>
+                <li>Master of Social Science (MSS)</li>
+                <li>Ph.D. in Social Work</li>
+            </ul>
+        </section>
+
+        <!-- Faculty Section -->
+        <section id="faculty" class="section">
+            <h2>Faculty</h2>
+            <p>Our faculty members are experienced professionals and researchers in the field of social work. They are committed to providing high-quality education and mentorship to our students.</p>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events" class="section">
+            <h2>Events</h2>
+            <p>Stay updated with our latest events, workshops, and seminars. Join us to learn more about social work practices and network with professionals in the field.</p>
+        </section>
+
+        <!-- Notice Board Section -->
+        <section id="notice-board" class="section">
+            <h2>Notice Board</h2>
+            <div class="notice-board">
+                <marquee behavior="scroll" direction="left" scrollamount="5">
+                    📢 <a href="https://drive.google.com/file/d/1Vn4unCEANeLc08BMXJsoxrFWEs19OleP/view?usp=drivesdk">Result <b>3.1</b> Published on - 11th February 2025</a> | 
+                    📢 Last Date for Submission of Assignments - 30th February 2025 | 
+                    📢 Scholarship Applications Open - Apply Now!
+                </marquee>
+            </div>
+        </section>
+
+        <!-- Teacher Info Section -->
+        <section id="teacher-info" class="section">
+            <h2>Teacher Information</h2>
+            <div class="teacher-info">
+                <div class="card">
+                    <h3>Seefat-E-Mannan</h3>
+                    <p>Assistant Professor, Social Work</p>
+                    <p><b>Chairman, Social Work</b></p>
+                    <p>Email: seefat.mou@university.edu</p>
+                </div>
+                <div class="card">
+                    <h3>Sheikh Marufa Nabila</h3>
+                    <p>Assistant Professor, Social Work</p>
+                    <p>Email: sheikh.marufa.nabila@university.edu</p>
+                </div>
+                <div class="card">
+                    <h3>Chayon Sikder</h3>
+                    <p>Assistant Professor, Social Work</p>
+                    <p>Email: chayon.sikder@university.edu</p>
+                </div>
+                <div class="card">
+                    <h3>Monia Manjur</h3>
+                    <p>Lecturer, Social Work</p>
+                    <p>Email: monia.manjur@university.edu</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Student Info Section -->
+        <section id="student-info" class="section">
+            <h2>Student Information</h2>
+            <div class="student-info">
+                <div class="card">
+                    <h3>14th Batch</h3>
+                    <p>Details about the 14th batch students.</p>
+                    <a href="#17-batch">View More</a>
+                </div>
+                <div class="card">
+                    <h3>15th Batch</h3>
+                    <p>Details about the 15th batch students.</p>
+                    <a href="#17-batch">View More</a>
+                </div>
+                <div class="card">
+                    <h3>16th Batch</h3>
+                    <p>Details about the 16th batch students.</p>
+                    <a href="#16-batch">View More</a>
+                </div>
+                <div class="card">
+                    <h3>17th Batch</h3>
+                    <p>Details about the 17th batch students.</p>
+                    <a href="#17-batch">View More</a>
+                </div>
+                <div class="card">
+                    <h3>18th Batch</h3>
+                    <p>Details about the 18th batch students.</p>
+                    <a href="#18-batch">View More</a>
+                </div>
+                <div class="card">
+                    <h3>19th Batch</h3>
+                    <p>Details about the 19th batch students.</p>
+                    <a href="#17-batch">View More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need further information, please feel free to contact us:</p>
+            <p>Email: socialwork@university.edu</p>
+            <p>Phone: +123-456-7890</p>
+            <p>Address: Department of Social Work, Noakhali Science and Technology University, Noakhali 3812</p>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Department of Social Work. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript to toggle the login dropdown
+        function toggleLoginDropdown() {
+            const dropdown = document.getElementById("loginDropdown");
+            dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.login-dropdown a')) {
+                const dropdowns = document.getElementsByClassName("login-dropdown-content");
+                for (let i = 0; i < dropdowns.length; i++) {
+                    const openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === "block") {
+                        openDropdown.style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
